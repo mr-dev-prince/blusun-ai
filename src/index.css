@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-primary-text: var(--primary-text);
+  --color-secondary-text: var(--secondary-text);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --color-warning: var(--warning);
+}
+
+:root {
+  --bg: #0781fe;
+  --surface: #0b1220;
+  --primary-text: #fed50a;
+  --secondary-text: #e6eef8;
+  --muted: #c8d3df;
+  --secondary: #e6eef8;
+  --accent: #fed50a;
+  --success: #10b981;
+  --danger: #ef4444;
+  --warning: #f97316;
+  --glass-01: rgba(255, 255, 255, 0.06);
+  --glass-02: rgba(255, 255, 255, 0.04);
+}
+
+html,
+body {
+  @apply bg-bg text-secondary-text min-h-screen;
+}
+
+* {
+  @apply box-border;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fed50a;
+  border-radius: 4px;
+}
+
+button {
+  @apply cursor-pointer;
+}
