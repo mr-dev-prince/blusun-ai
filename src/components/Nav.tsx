@@ -39,7 +39,7 @@ const Nav: React.FC = () => {
   return (
     <div className="fixed top-0 z-999 w-full">
       <div
-        className={`bg-accent/70 fixed top-0 left-0 w-full overflow-hidden backdrop-blur-sm transition-all duration-700 ease-in-out ${
+        className={`bg-primary/70 fixed top-0 left-0 w-full overflow-hidden backdrop-blur-sm transition-all duration-700 ease-in-out ${
           openMenu ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >

@@ -1,0 +1,37 @@
+import React from "react";
+import ns from "../../assets/next-steps.webp";
+import ServicesTitle from "../ServicesTitle";
+
+const Service6: React.FC = () => {
+  return (
+    <div className="flex w-full items-center justify-center py-12">
+      <div className="flex w-[50%] items-center justify-center">
+        <img
+          src={ns}
+          alt=""
+          className="h-[70vh] w-[80%] rounded-tl-4xl rounded-br-4xl object-cover"
+        />
+      </div>
+      <div className="w-[50%] space-y-10 px-8">
+        <ServicesTitle
+          num={6}
+          title={
+            <>
+              Collab & <br /> Next Steps
+            </>
+          }
+        />
+        <p className="font-semibold uppercase">
+          We ensure a seamless partnership with clear processes, timelines, and
+          communication. We define key milestones, align on expectations, and
+          provide ongoing support, making it easy for clients to collaborate and
+          see results. <br /> <br /> Our goal is to deliver a premium experience
+          while turning strategy into measurable outcomes, ensuring clarity,
+          efficiency, and consistent growth.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Service6;
