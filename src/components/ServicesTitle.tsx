@@ -16,7 +16,7 @@ const ServicesTitle: React.FC<ServicesTitleProps> = ({ title, num }) => {
         ))}
         <p className="text-xl font-semibold">]</p>
       </div>
-      <p className="text-primary w-full text-8xl font-black uppercase">
+      <p className="text-primary w-full text-5xl md:text-8xl font-black uppercase">
         {title}
       </p>
     </div>

@@ -46,7 +46,7 @@ const Nav: React.FC = () => {
         <div className="relative flex flex-col items-center justify-center gap-8 py-12">
           <button
             onClick={handleCloseMenu}
-            className="bg-bg absolute top-4 right-8 p-3 text-white transition-all duration-200 hover:scale-110"
+            className="bg-bg absolute top-4 right-8 p-1 md:p-3 text-white transition-all duration-200 hover:scale-110"
           >
             <CgClose size={24} />
           </button>
@@ -67,7 +67,7 @@ const Nav: React.FC = () => {
       </div>
 
       {/* Navbar Header */}
-      <div className="flex h-fit w-full justify-between px-12 py-2">
+      <div className="flex h-fit w-full justify-between px-12 py-8 md:py-2">
         <Link to={"/"}>
           <img src={sun} className="h-8" />
         </Link>
@@ -89,12 +89,19 @@ const NavElement: React.FC<NavElementProps> = ({
     <Link
       to={link}
       onClick={onClick}
-      className="relative overflow-hidden rounded-xl transition-all duration-200 hover:scale-105"
+      className="overflow-hidden rounded-xl transition-all duration-200 hover:scale-105"
     >
-      <img src={img} alt={text} className="h-48 w-34 object-cover" />
-      <p className="absolute top-0 left-0 flex h-full w-full items-center justify-center bg-blue-600/30 text-center font-semibold text-white">
-        {text}
-      </p>
+      <div className="relative hidden md:block">
+        <img src={img} alt={text} className="h-48 w-34 object-cover" />
+        <p className="absolute top-0 left-0 flex h-full w-full items-center justify-center bg-blue-600/30 text-center font-semibold text-white">
+          {text}
+        </p>
+      </div>
+      <div className="md:hidden w-full">
+        <p className="flex h-full w-full items-center justify-center bg-blue-600/30 text-center font-semibold text-white p-4 px-16 hover:bg-bg">
+          {text}
+        </p>
+      </div>
     </Link>
   );
 };

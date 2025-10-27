@@ -5,9 +5,9 @@ import ServicesTitle from "../ServicesTitle";
 
 const Service2: React.FC = () => {
   return (
-    <div className="flex min-h-screen flex-row-reverse justify-between py-24">
-      <div className="flex w-full flex-row-reverse items-center justify-center gap-18">
-        <div className="flex h-full w-[60%] flex-col justify-center gap-24 px-12">
+    <div className="flex min-h-screen flex-row-reverse justify-between md:py-24">
+      <div className="flex w-full flex-col-reverse md:flex-row-reverse items-center justify-center gap-4 md:gap-18">
+        <div className="flex h-full md:w-[60%] flex-col justify-center gap-4 md:gap-24 px-4 md:px-12">
           <ServicesTitle
             num={2}
             title={
@@ -28,11 +28,11 @@ const Service2: React.FC = () => {
             tailored, relevant, and real.
           </p>
         </div>
-        <div className="flex w-[40%] justify-end pr-8">
-          <img src={au} alt="" className="h-[70vh] rounded-tl-4xl" />
+        <div className="flex md:w-[40%] justify-end md:pr-8">
+          <img src={au} alt="" className="md:h-[70vh] rounded-tl-[15vh] md:rounded-tl-4xl" />
         </div>
       </div>
-      <div className="bg-secondary flex h-screen w-[6%] flex-col items-center justify-center gap-4">
+      <div className="bg-secondary hidden md:flex h-screen w-[6%] flex-col items-center justify-center gap-4">
         <p className="rotate-180 text-5xl font-black text-black [writing-mode:vertical-rl]">
           RESEARCH THAT CONVERTS.
         </p>

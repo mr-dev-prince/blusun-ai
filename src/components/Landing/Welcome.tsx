@@ -14,7 +14,7 @@ const Welcome: React.FC = () => {
           </p>
         </div>
         <div>
-          <p className="text-primary text-8xl font-black">
+          <p className="text-primary text-6xl md:text-8xl font-black">
             Welcome to <br /> our agency!
           </p>
         </div>
@@ -26,16 +26,16 @@ const Welcome: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="mt-8 flex w-full gap-8 px-12">
-        <div className="relative flex w-[50%] justify-end gap-4">
-          <img src={cw} alt="" className="h-[50vh] rounded-xs" />
-          <img src={tw} alt="" className="h-[50vh] rounded-xs" />
-          <p className="absolute text-2xl font-extrabold text-primary -bottom-12 left-64 w-[70%]">
+      <div className="mt-8 flex w-full gap-8 md:px-12">
+        <div className="relative flex flex-col md:flex-row w-full md:w-[50%] justify-end md:gap-4">
+          <img src={cw} alt="" className="md:h-[50vh] rounded-xs" />
+          <img src={tw} alt="" className="md:h-[50vh] rounded-xs" />
+          <p className="absolute text-4xl md:text-2xl font-extrabold text-primary bottom-[50%] left-12 md:-bottom-12 md:left-64 w-[70%]">
             We believe words should do more than speak - they should connect,
             inspire, and leave a lasting mark.
           </p>
         </div>
-        <div className="flex w-[50%] flex-col gap-12">
+        <div className="hidden md:flex w-[50%] flex-col gap-12">
           <div className="text-muted flex w-full items-start justify-center gap-8 text-sm font-medium">
             <div className="w-[50%]">
               <p className="text-justify">

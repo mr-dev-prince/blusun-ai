@@ -4,15 +4,15 @@ import ServicesTitle from "../ServicesTitle";
 
 const Service6: React.FC = () => {
   return (
-    <div className="flex w-full items-center justify-center py-12">
-      <div className="flex w-[50%] items-center justify-center">
+    <div className="flex flex-col md:flex-row w-full items-center justify-center py-12 gap-8 md:gap-0">
+      <div className="flex md:w-[50%] items-center justify-center">
         <img
           src={ns}
           alt=""
-          className="h-[70vh] w-[80%] rounded-tl-4xl rounded-br-4xl object-cover"
+          className="md:h-[70vh] md:w-[80%] rounded-tl-4xl rounded-br-4xl object-cover"
         />
       </div>
-      <div className="w-[50%] space-y-10 px-8">
+      <div className="md:w-[50%] space-y-10 px-4 md:px-8">
         <ServicesTitle
           num={6}
           title={

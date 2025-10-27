@@ -5,8 +5,8 @@ import cg from "../../assets/copywriting-campaign.webp";
 
 const Service5: React.FC = () => {
   return (
-    <div className="flex py-12">
-      <div className="w-[50%] space-y-6 pl-12">
+    <div className="flex flex-col-reverse md:flex-row md:py-12 gap-8 md:gap-0">
+      <div className="md:w-[50%] space-y-6 pl-4 md:pl-12">
         <ServicesTitle
           num={5}
           title={
@@ -21,16 +21,16 @@ const Service5: React.FC = () => {
           ensure your brand stands out at every touchpoint.
         </p>
       </div>
-      <div className="relative flex w-[50%] items-center justify-center">
+      <div className="relative flex md:w-[50%] items-center justify-center">
         <img
           src={cg}
           alt="campaing-graphics"
-          className="h-[60vh] rounded-tr-4xl"
+          className="md:h-[60vh] rounded-tl-4xl rounded-br-3xl md:rounded-tr-4xl"
         />
         <img
           src={cc}
           alt="campaign-cat"
-          className="absolute bottom-0 left-24 h-[30vh]"
+          className="hidden md:block absolute bottom-0 left-24 h-[30vh]"
         />
       </div>
     </div>

@@ -13,30 +13,23 @@ const Landing: React.FC = () => {
   return (
     <div className="h-fit w-full">
       <div className="relative flex h-screen w-full items-center justify-center">
-        <div className="absolute top-12 right-12 uppercase">
+        <div className="absolute top-24 right-12 uppercase md:top-12">
           <p className="font-semibold tracking-tighter">
             parthsarthisinh <br /> padhiyar{" "}
           </p>
         </div>
-        {/* <div className="absolute bottom-10 px-24 font-medium tracking-tight uppercase">
-          <p>
-            Blusun.ai isn’t another <strong>“content agency.”</strong> We turn
-            your ideas into posts people actually vibe with. LinkedIn that pops,
-            blogs that rank, and zero cringe. AI gives us speed, humans add
-            spice, you get authority. You talk, we type, and the internet pays
-            attention.
-          </p>
-        </div> */}
-        <div className="absolute bottom-20 animate-bounce">
+        <div className="absolute bottom-10 md:bottom-20 animate-bounce">
           <BiDownArrow color="#fed50a" size={28} />
         </div>
-        <div>
-          <img src={logo} className="h-64" alt="" />
-        </div>
-        <div>
-          <h1 className="text-primary text-9xl font-black -tracking-wider">
-            BLUSUN.AI
-          </h1>
+        <div className="flex flex-col md:flex-row items-center justify-center">
+          <div className="flex w-full items-center justify-center">
+            <img src={logo} className="h-64" alt="" />
+          </div>
+          <div>
+            <h1 className="text-primary text-6xl font-black -tracking-wider md:text-9xl">
+              BLUSUN.AI
+            </h1>
+          </div>
         </div>
       </div>
       <Welcome />

@@ -35,17 +35,17 @@ const socialLinks: SocialLink[] = [
 
 const Footer: React.FC = () => {
   return (
-    <div className="border-primary/20 flex h-fit items-center justify-between border-t px-24 py-4 text-black">
+    <div className="border-primary/20 flex flex-col md:flex-row h-fit items-center justify-center md:justify-between border-t md:px-24 py-4 text-black">
       <div className="flex items-center justify-center gap-3">
         <img src={logo} alt="" className="h-12" />
         <p className="text-primary text-3xl font-black">BLUSUN.AI</p>
       </div>
       <div>
-        <p className="text-secondary font-semibold uppercase">
+        <p className="text-secondary text-xs font-semibold uppercase">
           © 2025 BluSun.ai. All rights reserved.
         </p>
       </div>
-      <div className="flex gap-10">
+      <div className="flex gap-10 mt-4 md:mt-0">
         {socialLinks.map((social) => (
           <Link
             key={social.name}
