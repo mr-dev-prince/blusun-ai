@@ -1,0 +1,30 @@
+-> Services Page
+    Website Content Writing
+    Article Writing
+    Copywriting 
+    Email Newsletter writing 
+    Press release Writing
+    Product Description Writing 
+    Technical Writing 
+    News Content writing 
+-> Type of services --> Premium or Elite
+
+
+-> Industries Section
+    Industires 
+    Tech 
+    SaaS 
+    Startups
+    E-commerce 
+
+-> Blog Page
+
+-> Section Where user can schedule a call at calendly
+
+-> Why Blusun
+
+-> Download a Sample -> form to get email and name
+
+-> Service Promises
+
+-> FAQs, Reviews, Contact Us

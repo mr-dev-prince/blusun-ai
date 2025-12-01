@@ -13,7 +13,7 @@ const Landing: React.FC = () => {
   return (
     <div className="h-fit w-full">
       <div className="relative flex h-screen w-full items-center justify-center">
-        <div className="absolute top-24 right-12 uppercase md:top-12">
+        <div className="absolute top-24 right-12 uppercase md:top-24">
           <p className="font-semibold tracking-tighter">
             parthsarthisinh <br /> padhiyar{" "}
           </p>
